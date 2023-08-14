@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/237adeab55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <title>Spotify premium</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        background-color: black;
+         position: sticky;
+         top: 0;
+         width: 100%;
+         height: 70px;
+    }
+    .logo{
+        display: flex;
+         margin-left: 25px;
+         font-size: 30px;
+    }
+    .logo a{
+        color: white;
+         text-decoration: none;
+    }
+    .ref{
+        margin-top: 5px;
+    }
+    .brand{
+        margin-right:5px;
+         font-size: 40px;
+    }
+    .content{
+         display: flex;
+         align-items: center;
+         color: gray;
+         font-size: 20px;
+         margin-right: 300px;
+         border: none;
+     }    
+     .content a{
+         text-decoration: none;
+         margin-right: 25px;
+         color: gray;  
+     }
+     .pipe i{
+        color: red;
+     }
+     .sign{
+         color: gray;
+         
+     }
+     .flex{
+        display: flex;
+        align-items: center;
+        
+     }
+     .log{
+        height: 40px;
+         width: 100px;
+         border-radius: 25px;
+         background-color: white;
+         font-size: 18px; 
+     }
+     .log a{
+        text-decoration: none;
+         margin-left: 15px;
+         margin-top: 10px;
+         padding-top: 10px;
+         color: black;
+         font-size: 20px;
+     }
+     .black{
+         color: black;
+     }
+     .white{
+         color: white;
+         
+     }
+     .middle{
+         /* height: 600px; */
+         width:100%;
+         background-color:RGB(29, 117, 222);
+         /* align-items: center; */
+     }
+     .month{
+         padding: 30px;
+         margin-left: 150px;
+         padding: 30px;
+         margin-bottom:20px;
+         align-items: center;
+         font-size: 18px;
+         padding-top: 30px;
+     } 
+     .free{
+         color: white;
+         font-size: 40px;
+         font-weight: 400;
+         /* margin-left: 150px; */
+         /* padding-top: 20px; */
+     }
+     .after{
+         margin-left: 200px; 
+     }
+     .after p{
+         font-size: 35px;
+         color: white;
+         font-weight: 400;
+         padding-top: 20px;
+     }
+     .start{
+         background-color: black;
+         color: white;
+         height: 60px;
+         margin-left: 200px;
+         width: 180px;
+         border: 1px solid black;
+         border-radius: 30px;
+         font-size: 15px;
+         font-weight: 500;
+         margin-top: 30px;
+         align-items: center;
+
+     }
+     .plans{
+        background-color:RGB(29, 117, 222) ; ;
+         color: white;
+         height: 60px;
+         /* margin-left: 200px; */
+         width: 180px;
+         border: 2px solid white;
+         border-radius: 30px;
+         font-size: 15px;
+         font-weight: 500;
+         margin-left: 15px;
+         /* border-color: white; */
+         margin-top: 30px;
+         align-items: center;
+     }
+     .round{
+         font-size: 12px;
+         font-weight: 400;
+         margin-left:200px ;
+         margin-top: 40px;
+     }
+     .round span{
+         color: white;
+     }
+     .start:hover{
+         width: 185px;
+         padding: 2px 10px;
+       
+     }
+     .plans:hover{
+    
+         width: 185px;
+         padding: 2px 10px;
+       
+     } 
+     /* .premium{
+         margin-top: 25px;
+         
+     } */
+     .premium h1{
+         color: black;
+         text-align: center;
+         font-size: 60px;
+     }
+     .music{
+         height: 150px;
+         width: 150px;
+         margin-bottom: 20px;
+     }
+     .circle{
+         height: 400px;
+         width:100%;
+        margin-left: 150px;
+        padding-top: 20px;
+        /* padding-bottom: 100px; */
+        /* align-items: center; */
+        /* padding: 60px 20px; */
+        
+        /* margin-top: 10px; */
+         /* background-color: red; */
+     }
+     .full{
+         display: flex;
+         /* align-items: center; */
+         /* justify-content: space-evenly; */
+     }
+     .package{
+         background-color: white;
+         /* height: fit-content; */
+         width:100%;
+        
+     }
+     .lastbar{
+         background-color:RGB(239, 239, 239) ;
+         /* height: 500px; */
+         width: 100%;
+     }
+     .pick{
+         text-align: center;
+         padding-top: 30px;
+         color: black;
+     }
+     .listen{
+         text-align: center;
+         color: black;
+     }
+     .refer{
+         height: 600px;
+         width: 280px;
+         border-radius: 10px;
+         background-color: RGB(255, 255, 255);
+         padding-top: 20px;
+         box-shadow: 0px 0px 1px;
+
+     }
+     .subscription{
+         background-color:RGB(29, 117, 222);
+         height: 30px;
+         padding: 2px 2px;
+         width:fit-content;
+         border-radius: 5px;
+         margin-left: 25px;
+         /* padding-bottom: 10px; */
+         
+     }
+     .subscription p{
+         color: white;
+         font-size: 18px; 
+         font-weight: 400;  
+         /* margin-bottom: 5px; */
+     }
+     /* .premium{
+         color: blue;
+         font-size: 15px;
+         font-weight: 400px;
+         padding: 5px 10px;
+     } */
+     .available{
+        background-color:RGB(29, 117, 222);
+         height: 30px;
+         padding: 5px 10px;
+         width:fit-content;
+         margin-top: 10px;
+         border-color: 1px RGB(29, 117, 222);
+         border-radius: 5px;
+         margin-left: 25px;
+     }
+     .available h5{
+        /* color: RGB(29, 117, 222); */
+        color: white;
+        font-size: 15px;
+     }
+     .individual{
+         color: black;
+         margin-top: 15px;
+         font-size: 30px;
+         font-weight: 500;
+         margin-left:25px ;
+
+     }
+     .offer{
+         margin-left: 25px;
+         color: black;
+         font-size: 15px;
+         /* text-align: center;  */
+         font-weight: 400;
+         /* padding-top: 10px; */
+     }
+     .span{
+         margin-left: 25px;
+         color: black;
+         font-size: 15px;
+     }
+     .ad{
+         display: flex;
+         margin-left: 25px;
+        color: black;
+        font-size: 18px;
+     }
+     .solid{
+         margin-right: 10px;
+     }
+     .get{
+        background-color: black;
+         color: white;
+         height: 60px;
+         margin-left: 10px;
+         width: 250px;
+         border: 1px solid black;
+         border-radius: 30px;
+         font-size: 15px;
+         font-weight: 500;
+         margin-top: 40px;
+         /* padding: 5px 10px; */
+         /* align-items: center; */
+     }
+     .get:hover{
+         width:260px ;
+     }
+     .free{
+        font-size: 12px;
+         font-weight: 400;
+         /* margin-left:10px ; */
+         margin-top: 20px;
+         margin-left: 25px;
+     }
+     .free span {
+         color: black;
+         
+     }
+     .free a{
+         color: black;
+     }
+     .pass{
+         display: flex;
+         justify-content: space-evenly;
+         /* align-items: center; */
+     }
+     .finalbar{
+         background-color: black;
+         width: 100%;
+     }
+     .list{
+         color: white;
+         font-weight: 400;
+         font-size: 18px;
+     }
+     .list a{
+         text-decoration: none;
+         color: white;
+     }
+     .list a:hover{
+         color: green;
+     }
+     .com{
+         color: grey;
+         font-weight: 400;
+     }
+     .lastleg{
+         display: flex;
+         justify-content: space-around;
+         /* align-items: center; */
+         padding: 50px 50px;
+     }
+     .socials i{
+        color: white;
+         height: 50px;
+         width: 50px;
+         padding:10px;
+         font-size: 25px;
+         background-color: rgb(67, 64, 64);
+         border-radius: 30px;
+     }
+     .socials i:hover{
+         color: green;
+     }
+     .grey a{
+         color: #ffffff;
+         margin: 5px;
+         text-decoration: none;
+         font-size: 12px;
+     }
+     .grey{
+         display: flex;
+         justify-content: space;
+         margin-left:150px;
+     }
+     .grey a:hover{
+         color: green;
+     }
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a class="file:///C:/Users/user/Desktop/assignment/spotify/spotify.html" href=""> <i class="fa-brands fa-spotify"></i> </a>
+            <a class="file:///C:/Users/user/Desktop/assignment/spotify/spotify.html" href="">Spotify</a>
+        </div>
+        <div class="content">
+            <a href="file:///C:/Users/user/Desktop/assignment/spotify/premium.html">Premium</a>
+            <a href="">Support</a>
+            <a href=" file:///C:/Users/user/Desktop/assignment/spotify/spotify%20download.html">Download</a>
+            <div class="pipe">
+                <i class="fa-solid fa-horizontal-rule"></i>
+            </div>
+            <div class="flex">
+                <div class="sign">
+                    <a href=" file:///C:/Users/user/Desktop/assignment/spotify/sign%20up.html">Sign Up</a>
+                </div>
+                <div class="log">
+                    <a  href="file:///C:/Users/user/Desktop/assignment/spotify/login%20spotify.html"> log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+      <div>
+          <div class="month">
+              <h3 class="free">Get premium free for 1 month</h3>
+          </div>
+         <div class="after">
+             <p>Just # 900/month after. Cancel anytime</p>
+         </div>
+         <div class="view">
+             <button class="start">GET STARTED</button>
+             <button class="plans">VIEW PLANS</button>
+         </div>
+         <div class="round">
+              <span><a class="white" href="">Terms and conditions apply.</a> </span> 
+             <span class="white">1 month free not available for users who have already tried premimum </span>
+         </div>
+      </div>  
+    </div>
+    <div class="package">
+        <div class="premium">
+            <h1 class="black">Why go premium?</h1>
+        </div>
+        <div class="full">
+            <div class="circle">
+                <div><img class="music" src="./download music.png" alt=""></div>
+                <h5 class="black"> Download music.</h5>
+                <h6 class="black">Listen anywhere </h6>
+            </div>
+            <div class="circle">
+                <div><img class="music" src="./noads.png" alt=""></div>
+                <h5 class="black">Ad-free music listening.</h5>
+                <h6 class="black"> Enjoy uninterrupted music.</h6>
+            </div>
+            <div class="circle">
+                <div><img class="music" src="./play song.png" alt=""></div>
+                <h5 class="black">Play any song.</h5>
+                <h6 class="black">Even on mobile.</h6>
+            </div>
+            <div class="circle">
+                <div><img class="music" src="./unlimited.png" alt=""></div>
+                <h5 class="black">Unlimited skips.</h5>
+                <h6 class="black">Just hit next.</h6>
+            </div>
+        </div>
+
+                        
+    </div>
+    <div class="lastbar">
+        <h1 class="pick">Pick your Premium</h1>
+        <h6 class="listen">Listen without limits on your phone, speaker, and other devices.</h6>
+        <div class="pass">
+            <div class="refer">
+                    <div class="subscription">
+                      <p>1 month free with subscription</p>
+                    </div>
+                    <div class="available">
+                        <h5>Prepaid plans available</h5>
+                    </div>
+                    <div class="individual">Individual</div>
+                    <div class="offer">₦ 900/month after offer period</div>
+                    <div class="span">1 account</div><br><hr>
+                    <div>
+                        <div class="ad">
+                            <div class="solid"><i class="fa-solid fa-check"></i></div>
+                            <div>Ad-free music listening</div>
+                        </div>
+                        <div class="ad">
+                            <div class="solid"><i class="fa-solid fa-check"></i></div>
+                            <div>Play anywhere - even <br> offline</div>
+                        </div>
+                        <div class="ad">
+                            <div class="solid"><i class="fa-solid fa-check"></i></div>
+                            <div>On-demand playback</div>
+                        </div>
+                    </div>
+                    <button class="get">GET STARTED</button>
+                    <div class="free">
+                        <span><a class="white" href="">Terms and conditions apply.</a> </span> 
+                        <span class="white">1 month free <br> not available for users who have already <br> tried premimum </span>
+                    </div>
+            </div>
+
+            <div class="refer">
+                <div class="subscription">
+                  <p>1 month free</p>
+                </div>
+                
+                <div class="individual">Duo</div>
+                <div class="offer">₦ 1200/month after offer period</div>
+                <div class="span">2 account</div><br><hr>
+                <div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>2 Premium accounts for a <br> couple under one roof</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Ad-free music listening, <br> play offline, on-demand, <br> playback</div>
+                    </div>
+                    <!-- <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Ad-free music listening, <br> play offline, on-demand, <br> playback</div>
+                    </div> -->
+                </div>
+                <button class="get">GET STARTED</button>
+                <div class="free">
+                    <span><a class="white" href="">Terms and conditions apply.</a> </span> 
+                    <span class="white">1 month free <br> not available for users who have already <br> tried premimum </span>
+                </div>
+            </div> 
+            
+            <div class="refer">
+                <div class="subscription">
+                  <p>1 month free</p>
+                </div>
+                <div class="individual">Family</div>
+                <div class="offer">₦ 1,400/month after offer period</div>
+                <div class="span"> Up to 6 accounts</div><br><hr>
+                <div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>6 Premium accounts for <br> family members living <br> under one roof</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Block explicit music</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Ad-free music listening, <br> play offline, on-demand <br> playback</div>
+                    </div>
+                </div>
+                <button class="get">GET STARTED</button>
+                <div class="free">
+                    <span><a class="white" href="">Terms and conditions apply.</a> </span> 
+                    <span class="white">1 month free <br> not available for users who have already <br> tried premimum </span>
+                </div>
+            </div> 
+
+            <div class="refer">
+                <div class="subscription">
+                  <p>1 month free with subscription</p>
+                </div>
+                <div class="available">
+                    <h5>Prepaid plans available</h5>
+                </div>
+                <div class="individual">Student</div>
+                <div class="offer">₦ 450/month after offer period</div>
+                <div class="span">1 account</div><br><hr>
+                <div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Special discount for eligible <br> students in university</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Ad-free music listening</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>Play anywhere - even <br> offline</div>
+                    </div>
+                    <div class="ad">
+                        <div class="solid"><i class="fa-solid fa-check"></i></div>
+                        <div>On-demand playback </div>
+                    </div>
+                </div>
+                <button class="get">GET STARTED</button>
+                <div class="free">
+                    <span><a class="white" href="">Terms and conditions apply.</a> </span> 
+                    <span class="white">1 month free <br> not available for users who have already <br> tried premimum </span>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="finalbar">
+        <div>
+            <div class="lastleg">
+                <div class="logo">
+                    <a class="brand" href=""> <i class="fa-brands fa-spotify"></i> </a>
+                    <a class="ref" href="">Spotify</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <a href=""><p class="com"> Company</p></a>
+                        <a href=""><p>About</p></a>
+                       <a href=" file:///C:/Users/user/Desktop/assignment/spotify/join%20the%20band.html"> <p>Jobs</p></a>
+                        <a href=""><p>For the record</p></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                       <a href=""> <p class="com"> Communities</p></a>
+                       <a href=""> <p>For Artists</p></a>
+                       <a href=""> <p>Developers</p></a>
+                      <a href="">  <p>Advertising</p></a>
+                     <a href="">   <p>Investor</p></a>
+                      <a href="">  <p>Vendors</p></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                        <a href=""><p class="com">Useful links</p></a>
+                        <a href=""><p>Support</p></a>
+                       <a href=""> <p>Web player</p></a>
+                       <a href=""> <p>Free mobile app</p></a>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+            <div class="grey">
+                <a href=""><p>Legal</p></a>
+                <a href=""><p>Privacy center</p></a>
+                <a href=""><p>privacy policy</p></a>
+                <a href=""><p>Cookies</p></a>
+                <a href=""><p>About us</p></a>
+            </div>
+        </div>
+    </div>
+    <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

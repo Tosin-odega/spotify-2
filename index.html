@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/237adeab55.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "inter", sans-serif;
+    }
+    .body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     .navbar{
+         background-color: black;
+         position: sticky;
+         top: 0;
+         z-index: 100;
+         height: 70px;
+         width: 100%;
+        
+     }
+     .logo{
+         display: flex;
+         margin-left: 25px;
+         font-size: 30px;
+     }
+      .logo a{
+          text-decoration: none;
+          color: white;
+      }
+     .ref{
+         margin-top: 5px;
+     }
+     .brand{
+         margin-right:5px;
+         font-size: 40px;
+     }
+     .content{
+         display: flex;
+         align-items: center;
+         color: gray;
+         font-size: 20px;
+         margin-right: 50px;
+         border: none;
+         
+     }    
+     .content a{
+         text-decoration: none;
+         margin-right: 25px;
+         color: gray;  
+     }
+     .pipe i{
+        color: red;
+     }
+     .sign{
+         color: gray;
+         
+     }
+     .flex{
+        display: flex;
+        align-items: center;
+        
+     }
+     .log{
+         height: 40px;
+         width: 100px;
+         border-radius: 25px;
+         background-color: white;
+         font-size: 18px; 
+     }
+     .log a{
+         text-decoration: none;
+         margin-left: 15px;
+         margin-top: 10px;
+         padding-top: 10px;
+         color: black;
+         font-size: 20px;
+     }
+     .section1{
+         height: 100vh;
+         width: 100%;
+         background-color: black;
+         position: sticky;
+         top: 70px;
+         /* position: relative; */
+         cursor: pointer;
+     }
+     
+     .section2{
+         height:fit-content;
+         /* position: absolute; */
+         /* margin-left: 10%; */
+         width: 100%;
+         cursor: pointer;
+         background-color:rgb(37, 37, 37);
+         
+     }
+     .middle{
+         display: flex;
+     }
+     .aside{
+         margin-top: 25px;
+     }
+     
+     .home{
+         display: flex;
+         color: white;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+     }
+     .home a{
+         text-decoration: none;
+         color: white;
+     }
+     .glass{
+         display: flex;
+         color: gray;
+         font-size: 18px;
+         font-weight: 400;
+         
+     }
+     .glass i{
+        margin-right: 15px;
+        margin-top: 5px;
+     }
+     .home i{
+        margin-top: 5px;
+         margin-right: 10px;
+     }
+     .see{
+         margin-left: 20px;
+     }
+     .glass:hover{
+         color: white;
+         transition: 0.5s;
+     }
+     .cook{
+         margin-top: 350px;
+     }
+     .cook a{
+         text-decoration: none;
+         font-size: 18px;
+         color: gray;
+         font-weight: 100;
+         margin-left: 15px;
+     }
+     .white{
+         color: white;
+     }
+     .gray{
+         color: gray;
+     }
+     .editor{
+         margin-top: 10px;
+         margin-left: 30px;
+     }
+     .editor h2{
+         font-size: 25px;
+     }
+     .music{
+         padding-top: 2px;
+         width: 150px;
+     }
+     .friday{
+         margin-top: 10px;
+     }
+    .bond{
+        height: 300px;
+        width: 220px;
+        position: relative;
+        padding: 20px 40px;
+        margin: 10px;
+        align-items: center;
+        /* background-color: black; */
+        /* border-radius: 10px; */
+    }
+    .bond img{
+        height: 140px;
+        width: 140px;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .bond:hover{
+        height: 300px;
+        width: 220px;
+        border-radius: 10px;
+        background-color: rgb(49, 47, 47);
+        transition: 1s;
+    }
+    .circle{
+        width: 45px;
+         height: 45px;
+         border-radius: 50%;
+         background-color: green;
+         margin-top: -100px;
+         margin-left: 130px;
+         position: absolute;  
+        opacity: 0; 
+    }
+    .circle i{
+        margin-left: 20px;
+         align-items: center;
+         margin-top: 15px;
+         font-size: 18px;
+    }
+    .circle:hover{
+        opacity: 1;
+    }
+    .main-bond{
+        display: flex;
+    }
+    .help{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-left: 18px;
+    }
+    .help a{
+        color: gray;
+    }
+    .finalbar{
+         background-color: black;
+         width: 100%;
+     }
+     .list{
+         color: white;
+         font-weight: 400;
+         font-size: 18px;
+     }
+     .list a{
+         text-decoration: none;
+         color: white;
+     }
+     .list a:hover{
+         color: green;
+     }
+     .com{
+         color: grey;
+         font-weight: 400;
+     }
+     .lastleg{
+         display: flex;
+         justify-content: space-around;
+         /* align-items: center; */
+         padding: 50px 50px;
+     }
+     .socials i{
+        color: white;
+         height: 50px;
+         width: 50px;
+         padding:10px;
+         font-size: 25px;
+         background-color: rgb(67, 64, 64);
+         border-radius: 30px;
+     }
+     .socials i:hover{
+         color: green;
+     }
+     .grey a{
+         color: #ffffff;
+         margin: 5px;
+         text-decoration: none;
+         font-size: 12px;
+     }
+     .grey{
+         display: flex;
+         justify-content: space;
+         margin-left:150px;
+     }
+     .grey a:hover{
+         color: green;
+     }
+</style>
+<body>
+   
+    <div class="navbar">
+        <div class="logo">
+            <a  href="file:///C:/Users/user/Desktop/assignment/spotify/spotify.html"> <i class="fa-brands fa-spotify"></i> </a>
+            <a  href="file:///C:/Users/user/Desktop/assignment/spotify/spotify.html">Spotify</a>
+        </div>
+        <div class="content">
+            <a href=" file:///C:/Users/user/Desktop/assignment/spotify/premium.html">Premium</a>
+            <a href="">Support</a>
+            <a href="file:///C:/Users/user/Desktop/assignment/spotify/spotify%20download.html">Download</a>
+            <div class="pipe">
+                <i class="fa-solid fa-horizontal-rule"></i>
+            </div>
+            <div class="flex">
+                <div class="sign">
+                    <a href="file:///C:/Users/user/Desktop/assignment/spotify/sign%20up.html">Sign Up</a>
+                </div>
+                <div class="log">
+                    <a  href="file:///C:/Users/user/Desktop/assignment/spotify/login%20spotify.html">Log in</a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="middle">
+        <section class="section1">
+            <aside class="aside">
+
+                    <div class="home">
+                        <i class="fa-solid fa-house"></i>
+                        <a href=""> Home</a>
+                    </div>
+                    <div class="see">
+                        <div class="glass">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Search</p>
+                        </div>
+                        <div class="glass">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Library</p>
+                        </div>
+                        <div class="glass">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <p>Create playlist</p>
+                        </div>
+                        <div class="glass">
+                            <i class="fa-brands fa-gratipay"></i>
+                            <p>Liked playlist</p>
+                        </div>
+                    </div>
+            </aside>
+            <div class="cook"> 
+                <a href="">Cookies</a>
+               <div>
+                <a href="">Privacy</a>
+               </div>
+            </div>
+
+        </section>
+        <!-- section 2 starts here -->
+        <section class="section2">
+          <div class="editor">
+             <h2 class="white">Editor's pick</h2>
+          </div>
+            <div class="main-bond">
+                <div class="bond">
+                    <img src="./blond.jpg" alt="">
+                    <div class="friday">
+                        <p class="white">New Music Friday</p>
+                    </div>
+                    <div class="music">
+                        <span class="gray">New Music From BNXN.</span>
+                        <span class="gray">King Promise, Gyakie,...</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                
+
+                <div class="bond">
+                    <img src="./hopkins.jpg" alt="">
+                    <div class="friday">
+                        <p class="white">Mindtrap Music</p>
+                    </div>
+                    <div class="music">
+                        <span class="gray">Lama House, Helios,</span>
+                        <span class="gray">Beyonce, Omah lay,</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="bond">
+                    <img src="./feel.jpg" alt="">
+                    <div class="friday">
+                        <p class="white">Hot Hits Naija</p>
+                    </div>
+                    <div class="music">
+                        <span class="gray">Nigeeria's hottest tracks</span>
+                        <span class="gray">cover:DJ Tunez</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="bond">
+                    <img src="./star.jpg" alt="">
+                    <div class="friday">
+                        <p class="white">Cocoa Butter</p>
+                    </div>
+                    <div class="music">
+                        <span class="gray">Smooth Soul-inspired tracks</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="bond">
+                    <img src="./best.jpg" alt="">
+                    <div class="friday">
+                        <p class="white">Sizzlers</p>
+                    </div>
+                    <div class="music">
+                        <span class="gray">New  and emerging R&B and Alternative tracks</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second row starts here -->
+            
+                <div class="editor">
+                    <h2 class="white">Focus</h2>
+                 </div>
+                      <div class="help">
+                         <span class="gray">Music to help you concentrate</span>
+                         <a href="">See all</a>
+                      </div>
+                     <div class="main-bond">
+                         <div class="bond">
+                              <img src="./ijo labala.jpg" alt="">
+                             <div class="friday">
+                                 <p class="white">Sound Semesters</p>
+                             </div>
+                             <div class="music">
+                                 <span class="gray">Chill afro music to study with</span>
+                             </div>
+                             <div class="circle">
+                                 <i class="fa-solid fa-play"></i>
+                             </div>
+                         </div>
+                            <div class="bond">
+                                <img src="./ruger.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Lofi Beats</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Let yourself be sunkissed with beats to chill, relax.. </span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div> 
+                            <div class="bond">
+                                <img src="./wizzy.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Coding Mode</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Dedicated to all the programmers out there.</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./buju.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">jazz in the backgro...</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Soft jazz for all your activities </span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div> 
+                            <div class="bond">
+                                <img src="./falz.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Peaceful piano</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Relax and indulge with beautiful piano pieces</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                     </div>
+                    <div class="editor">
+                        <h2 class="white">Mood</h2>
+                    </div>
+                        <div class="help">
+                            <span class="gray">Playlist to match your mood</span>
+                            <a href="">See all</a>
+                        </div>
+                        <div class="main-bond">
+                            <div class="bond">
+                                <img src="./falz.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Happy Hits</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray"> Hits to boost your mood and  fill with...</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./talking.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Sad Songs</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray"> Beautiful songs to break your heart...</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./alt.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Mood Booster</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Get happy with today's dose of feel-good songs.</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./plot.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Life Sucks</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Having a bad day? we know how it feels.</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./urban.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Feelin' Myself</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">The hip-hop playlist that's a whole mood. Art By L..</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor">
+                            <h2 class="white">Popular new releases</h2>
+                        </div>
+                        <div class="help">
+                            <span class="gray">Sick ass music list</span>
+                            <a href="">See all</a>
+                         </div>
+                         <div class="main-bond">
+                            <div class="bond">
+                                <img src="./awe.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">New Music Friday</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">The very best in new music from around the...</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./hair.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">Kenkele</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">BNXN fka Buju, Wande coal</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./yemi.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">5 Star</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">King Promise</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./baby.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">MY DIARY-EP</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">Gyakie</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="bond">
+                                <img src="./head.jpg" alt="">
+                                <div class="friday">
+                                    <p class="white">THE GUY</p>
+                                </div>
+                                <div class="music">
+                                    <span class="gray">M.I ABAGA</span>
+                                </div>
+                                <div class="circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                         </div>
+
+
+
+
+                         <div class="finalbar">
+                            <div>
+                                <div class="lastleg">
+                                    <div class="logo">
+                                        <a class="brand" href=""> <i class="fa-brands fa-spotify"></i> </a>
+                                        <a class="ref" href="">Spotify</a>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <a href=""><p class="com"> Company</p></a>
+                                            <a href=""><p>About</p></a>
+                                           <a href=" file:///C:/Users/user/Desktop/assignment/spotify/join%20the%20band.html"> <p>Jobs</p></a>
+                                            <a href=""><p>For the record</p></a>
+                                        </ul>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                           <a href=""> <p class="com"> Communities</p></a>
+                                           <a href=""> <p>For Artists</p></a>
+                                           <a href=""> <p>Developers</p></a>
+                                          <a href="">  <p>Advertising</p></a>
+                                         <a href="">   <p>Investor</p></a>
+                                          <a href="">  <p>Vendors</p></a>
+                                        </ul>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <a href=""><p class="com">Useful links</p></a>
+                                            <a href=""><p>Support</p></a>
+                                           <a href=""> <p>Web player</p></a>
+                                           <a href=""> <p>Free mobile app</p></a>
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                </div>
+                                <div class="grey">
+                                    <a href=""><p  >Legal</p></a>
+                                    <a href=""><p>Privacy center</p></a>
+                                    <a href=""><p>privacy policy</p></a>
+                                    <a href=""><p>Cookies</p></a>
+                                    <a href=""><p>About us</p></a>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+    </div>
+    
+
+    <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

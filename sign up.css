@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "inter", sans-serif;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+    background-color: white;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo a:hover{
+    color: black;
+}
+.ref{
+    margin-top: 5px;
+    font-size: 45px;
+    
+}
+.brand{
+    margin-right:5px;
+    font-size: 45px;
+    
+}
+.whole-login{
+    text-align: center;
+    background-color: white;
+}
+.continue{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.facebook{
+    display: flex;
+    color: white;
+    padding: 15px 15px;
+    margin-left: 80px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.facebook i{
+    margin-right:15px;
+    font-size: 18px;
+}
+.room{
+    height: 45px;
+    width: 500px;
+    background-color: RGB(59, 89, 152);
+    border-radius: 25px;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray;
+    cursor: pointer;
+}
+.white{
+    height: 45px;
+    width: 500px;
+    background-color:rgb(167, 133, 103) ;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray; 
+    cursor: pointer;
+}
+.white span{
+    color: rgb(106, 105, 105);
+}
+.big-container{
+    display: flex;
+    margin-left: 500px;
+}
+.div1{
+    width: 250px;
+    
+}
+.div2{
+    width: 250px;
+    
+}
+.div3{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: gray;
+}
+.email h6{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left:500px ;
+    margin-top: 20px;
+}
+.username{
+    height: 50px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 500px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+.username input{
+    outline: none;
+    border: none;
+    width: 400px;
+    height: fit-content;
+}
+.numbers{
+    color: green;
+    /* margin-bottom: 30px; */
+    /* top: 20%; */
+    margin-left: 500px;  
+}
+.password{
+    height: 50px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 500px;
+    padding: 10px 10px; 
+    margin-bottom:10px ;
+}
+.password input{
+    outline: none;
+    border: none;
+    width: 400px;
+    height: fit-content;
+}
+.profile{
+    margin-left: 500px;
+}
+.date{
+    height: 30px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    /* align-items: center;
+    margin-left: 500px; */
+    padding: 2px 2px;
+    /* margin-bottom: 10px; */
+}
+.date input{
+    outline: none;
+    border: none;
+    width: 50px;
+    height: fit-content;
+    /* margin: 5px 5px; */
+}
+.day{
+    /* margin-left: 500px; */
+    margin-bottom: 10px;
+    align-items: center;
+}
+.month{
+    height: 30px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px 2px;
+}
+.month input{
+    outline: none;
+    border: none;
+    width: 80px;
+    height: fit-content;
+}
+.year{
+    height: 30px;
+    width: 120px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px 2px;
+}
+.year input{
+    outline: none;
+    border: none;
+    width: 60px;
+    height: fit-content;
+}
+.bio{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5%;
+    /* align-items: center; */
+    /* margin: 30px; */
+    margin-left: 500px;
+}
+.last{
+    display: flex;
+    gap: 10%;
+    margin-left: 500px;
+}
+.box{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.policy{
+    margin-left: 500px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.policy a{
+    color: green;
+}
+.sign{
+    background-color: green;
+    color: black;
+    height: 50px;
+    margin-left: 600px;
+    width: 150px;
+    border-radius: 30px;
+    margin-top:30px;
+    align-items: center;
+    margin-bottom: 20px ;
+    cursor: pointer;
+}
+.sign p{
+    color: white;
+    margin-left: 35px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}

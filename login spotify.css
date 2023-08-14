@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "inter", sans-serif;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+    background-color: white;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.logo a:hover{
+    color: black;
+}
+.ref{
+    margin-top: 5px;
+    font-size: 45px;
+    
+}
+.brand{
+    margin-right:5px;
+    font-size: 45px;
+    
+}
+.whole-login{
+    text-align: center;
+    background-color: white;
+}
+.continue{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+.facebook{
+    display: flex;
+    color: white;
+    /* padding: 20px 20px; */
+    /* margin: 50px 50px; */
+    /* padding-top: 10px; */
+    padding: 15px 15px;
+    margin-left: 80px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    /* width: 500px; */
+}
+.facebook i{
+    margin-right:15px;
+    font-size: 18px;
+}
+.room{
+    height: 50px;
+    width: 500px;
+    background-color: RGB(59, 89, 152);
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray;
+    cursor: pointer;
+}
+.black{
+    height: 50px;
+    width: 500px;
+    background-color: black;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray;
+    cursor: pointer;
+}
+.white{
+    height: 50px;
+    width: 500px;
+    background-color:rgb(167, 133, 103) ;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray; 
+    cursor: pointer;
+}
+.white span{
+    color: rgb(106, 105, 105);
+}
+.phone{
+    height: 50px;
+    width: 500px;
+    background-color:rgb(167, 133, 103) ;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray;
+    cursor: pointer; 
+    
+}
+.phone span{
+    color: rgb(106, 105, 105);
+}
+.big-container{
+    display: flex;
+
+    margin-left: 500px;
+}
+.div1{
+    width: 250px;
+    /* height: 10px; */
+}
+.div2{
+    width: 250px;
+    /* height: 10px; */
+}
+.div3{
+    color: gray;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.email h6{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left:500px ;
+    margin-top: 20px;
+}
+.username{
+    height: 50px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 500px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+/* .username input:focus{
+    border: 2px solid black;
+} */
+.username input{
+    outline: none;
+    border: none;
+    width: 400px;
+    height: fit-content;
+}
+.password{
+    height: 50px;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 500px;
+    padding: 10px 10px; 
+    margin-bottom:10px ;
+}
+.password input{
+    outline: none;
+    border: none;
+    width: 400px;
+    height: fit-content;
+}
+/* .password input:focus{
+    border: 2px solid black;
+} */
+.forgot{
+    margin-left: 500px;
+    /* color: black; */
+}
+.forgot a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* .last{
+    margin-left:500px;
+    
+} */
+.check{
+    color: green;
+}
+.log-in{
+    background-color: green;
+    color: black;
+    height: 50px;
+    /* margin-left: 200px; */
+    width: 125px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    /* margin-top: 30px; */
+    align-items: center;
+    margin-left: 200px;
+}
+.bike{
+    display: flex;
+    margin-left: 500px;
+    /* padding: 100px 100px; */
+}
+.dont{
+    color:black;
+    font-size: 25px;
+    font-weight: 700px;
+    /* margin-left: 500px; */
+    text-align: center;
+}
+.with{
+    height: 50px;
+    width: 500px;
+    background-color:whitesmoke ;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 1px lightgray; 
+    cursor: pointer;
+    /* margin-top: 5px; */
+    padding: 15px 15px;
+}
+.with span{
+    margin-left: 100px;
+    /* padding-top: 10px; */
+    color: grey;
+    font-size: 18px;
+}
